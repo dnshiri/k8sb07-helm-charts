@@ -1,0 +1,70 @@
+apiVersion: v1
+entries:
+  solr:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 8.10.1
+    created: "2021-11-09T17:19:09.825058016Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Apache Solr is an open source enterprise search platform
+    digest: bdc931d566e75e46af622b9cba8a077aeeed3f310ca67d0deb04284692491a3e
+    home: https://github.com/bitnami/charts/tree/master/bitnami/solr
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-110x117.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: solr
+    sources:
+    - https://github.com/bitnami/bitnami-docker-solr
+    - https://lucene.apache.org/solr/
+    urls:
+    - https://dn.shiri.github.io/k8sb07-helm-charts/solr-2.1.2.tgz
+    version: 2.1.2
+  tomcat:
+  - annotations:
+      category: ApplicationServer
+    apiVersion: v2
+    appVersion: 10.0.12
+    created: "2021-11-09T17:19:09.828640042Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Chart for Apache Tomcat
+    digest: e30b6de0b71eb4963db623ade30d3145f35baea6a599c1604ae156209152831f
+    home: https://github.com/bitnami/charts/tree/master/bitnami/tomcat
+    icon: https://bitnami.com/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/bitnami-docker-tomcat
+    - http://tomcat.apache.org
+    urls:
+    - https://dn.shiri.github.io/k8sb07-helm-charts/tomcat-9.5.3.tgz
+    version: 9.5.3
+generated: "2021-11-09T17:19:09.816282411Z"
